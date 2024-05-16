@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center {
+  text-align: center !important;
+}
+/* Narbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+
+
+
+.customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .customers td, .customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  /* .customers tr:hover {background-color: #ddd;} */
+  
+  .customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+  }
+  
+  .button1:hover {
+    background-color: #f44336;
+    color: white;
+  }
+
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #ffc107;
+  }
+  
+  .button2:hover {
+    background-color: #ffc107;
+    color: white;
+  }
+
+  .button3 {
+    background-color: #008CBA; 
+    color: white; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button3:hover {
+   opacity: 0.6;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .button4 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #04AA6D;
+  }
+  
+  .button4:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+  /* Modal */
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 10px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    text-align: right;
+  }
+
+  .button-sm {
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .btn-submit {
+    background-color: #008CBA; /* Green */
+  }
+
+  .btn-cancel {
+    background-color: #f44336; /* Green */
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .mt-5 {
+    margin-top: 20px;
+  }
+  .mb-5 {
+    margin-bottom: 20px;
+  }
+  .mr-5 {
+    margin-right: 10px;
+  }
+
+  .mt-3 {
+    margin-top: 12px;
+  }
+
+  .text-bold {
+    font-weight: bold;
+  }
+
+  .modal-group-btn {
+    text-align: right;
+    margin-top: 10px;
+  }
